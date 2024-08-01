@@ -30,17 +30,29 @@ An example of a two-tier architecture I created was deployed in an Azure environ
 
 Follow me;
 
-1. Create Resource Groups for the VNets.
-2. Create VNets and Subnets
+Create Resource Groups for the VNets.
+Create VNets and Subnets
+
+
 Create two VNets and define their respective subnets. A subnet is a sub-network that can contain a subset of IP addresses within the larger IP address range defined for a VNet.
 
-3. Create individual Virtual Machines
-Create individual Virtual Machines in each VNet. Each VM will be deployed with its own NIC (Network Interface Card) that will be attached to a subnet within its respective VNet. Select an OS, in this case study I deployed a Linux server, then complete the necessary configurations for the VM (e.g. networking, security)
-4. Configure NSGs (Network Security Groups)
-Create NSGs and apply them to each VNet to restrict inbound and outbound traffic. Create necessary rules for allowing inbound and outbound traffic as per the security requirements (e.g. allowing traffic on TCP 3389 for remote access to the VMs).
-5. Test and Verify your connection
-Verify connectivity to each of the VMs by using the ping tool, once connectivity is established head over to establish peering.
-6. Establish VNet Peering
-To enable communication between VMs in different VNets, establish VNet peering between them and ping VNet 2 from VNet 1, then vice versa.
-
 <img width="877" alt="virtualnetpeering" src="https://github.com/user-attachments/assets/8ba3a7c3-1da5-439a-aee4-b5bd341d0605">
+
+Create individual Virtual Machines in each VNet. Each VM will be deployed with its own NIC (Network Interface Card) that will be attached to a subnet within its respective VNet. Select an OS, in this case study I deployed a Linux server, then complete the necessary configurations for the VM (e.g. networking, security)
+
+![e00a4547-4e38-4b5a-9ac2-24b1fe13602d](https://github.com/user-attachments/assets/4280f409-1523-4d19-9c26-abebdd9a9a20
+
+Configure NSGs (Network Security Groups)
+Create NSGs and apply them to each VNet to restrict inbound and outbound traffic. Create necessary rules for allowing inbound and outbound traffic as per the security requirements (e.g. allowing traffic on TCP 3389 for remote access to the VMs).
+![772fa0b5-5319-437c-a0d5-8a4c01d7665c](https://github.com/user-attachments/assets/02f546a6-641c-4d56-b567-abbcf1c1b566
+
+Test and Verify your connection
+Verify connectivity to each of the VMs by using the ping tool, once connectivity is established head over to establish peering.
+
+![21381c36-ffb2-42c8-8254-1af14d0bcce3](https://github.com/user-attachments/assets/5714caf2-1753-4774-b014-81b01c5af671)
+
+7. Establish VNet Peering
+To enable communication between VMs in different VNets, establish VNet peering between them and ping VNet 2 from VNet 1, then vice versa.
+![c0b645fe-6537-4ace-bfac-3a245cfeb977](https://github.com/user-attachments/assets/90537c57-ac86-442a-8010-1bcbd7da67d9)
+
+<img width="833" alt="peering achieved" src="https://github.com/user-attachments/assets/3302f319-a24f-40b7-8801-939dbf007100">
