@@ -42,3 +42,5 @@ Create NSGs and apply them to each VNet to restrict inbound and outbound traffic
 Verify connectivity to each of the VMs by using the ping tool, once connectivity is established head over to establish peering.
 6. Establish VNet Peering
 To enable communication between VMs in different VNets, establish VNet peering between them and ping VNet 2 from VNet 1, then vice versa.
+
+<img width="877" alt="virtualnetpeering" src="https://github.com/user-attachments/assets/8ba3a7c3-1da5-439a-aee4-b5bd341d0605">
