@@ -1,14 +1,15 @@
 # VNet-peering
-# How to establish a VNet peering in a two-tier architecture.
+
 As organizations increasingly migrate their workloads to the cloud, the need for secure, efficient, and scalable connectivity between virtual networks has become a top priority.
 
 In Azure, Virtual Network (VNet) peering has emerged as a game-changing solution, enabling organizations to connect their VNets in a seamless and secure manner.
 
 Especially now that, organizations are no longer confined to a single cloud or on-premises environment. With the rise of hybrid and multi-cloud deployments, the need for secure and efficient connectivity between different environments has become more pressing than ever. Azure VNet peering addresses this challenge by providing a secure, reliable, and high-performance connection between VNets.
 
- A common scenario that may require an organizations to make use of VNet peering  is
+ A common scenario that may require an organization to make use of VNet peering is this -
 
 A global online gaming platform that uses a multi-region deployment to serve users across different geographic regions. They have data centers in:
+
 North America (USA, Canada)
 Europe (UK, Germany, France)
 Asia Pacific (Japan, China, Australia)
@@ -21,9 +22,13 @@ A user in North America wants to play a game with a friend in Europe. The gaming
 To ensure a successful VNet peering implementation in Azure, follow these essential steps:
 
 1.Plan Your Network Architecture: Design your network architecture to align with your organizational needs, considering factors like routing, security, and scalability.
+
 2.Configure VNet Peering Connections: Set up VNet peering connections between the required VNets, ensuring that the necessary routes and network security groups (NSGs) are in place.
+
 3.Verify Connectivity: Test and verify connectivity between the peered VNets to ensure seamless communication.
+
 4.Monitor and Optimize: Continuously monitor VNet peering connections and optimize them as needed to ensure optimal performance and security.
+
 5.Implement Security Best Practices: Enforce robust security measures, such as NSGs, Azure Firewall, and access controls, to protect your VNet peering connection.
 
 
@@ -48,6 +53,7 @@ Create individual Virtual Machines in each VNet. Each VM will be deployed with i
 
 Configure NSGs (Network Security Groups)
 Create NSGs and apply them to each VNet to restrict inbound and outbound traffic. Create necessary rules for allowing inbound and outbound traffic as per the security requirements (e.g. allowing traffic on TCP 3389 for remote access to the VMs).
+
 ![772fa0b5-5319-437c-a0d5-8a4c01d7665c](https://github.com/user-attachments/assets/6ed14b6d-dbaa-41b0-a3b4-df6bbc0c53e2)
 
 Test and Verify your connection
@@ -57,6 +63,7 @@ Verify connectivity to each of the VMs by using the ping tool, once connectivity
 
 7. Establish VNet Peering
 To enable communication between VMs in different VNets, establish VNet peering between them and ping VNet 2 from VNet 1, then vice versa.
+
 ![c0b645fe-6537-4ace-bfac-3a245cfeb977](https://github.com/user-attachments/assets/90537c57-ac86-442a-8010-1bcbd7da67d9)
 
 <img width="833" alt="peering achieved" src="https://github.com/user-attachments/assets/3302f319-a24f-40b7-8801-939dbf007100">
