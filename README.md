@@ -24,7 +24,7 @@ Implement Security Best Practices: Enforce robust security measures, such as NSG
 
 An example of a two-tier architecture I created was deployed in an Azure environment where two different virtual networks were made to connect with each other, enabling resources in each of the VNets to communicate as if they were within the same network.
 
-![Alt text](Two tier Architecture.png)
+![Two tier Architecture.png]
 
 
 
