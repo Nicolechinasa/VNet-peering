@@ -22,8 +22,11 @@ Monitor and Optimize: Continuously monitor VNet peering connections and optimize
 Implement Security Best Practices: Enforce robust security measures, such as NSGs, Azure Firewall, and access controls, to protect your VNet peering connection.
 
 
-An example of a two-tier architecture I created was deployed in an Azure environment where two different virtual networks were made to connect with each other, enabling resources in each of the VNets to communicate as if they were within the same network. 
+An example of a two-tier architecture I created was deployed in an Azure environment where two different virtual networks were made to connect with each other, enabling resources in each of the VNets to communicate as if they were within the same network.
+
 Two tier Architecture.png
+
+
 
 Follow me;
 
