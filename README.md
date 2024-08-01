@@ -44,7 +44,7 @@ Create individual Virtual Machines in each VNet. Each VM will be deployed with i
 
 Configure NSGs (Network Security Groups)
 Create NSGs and apply them to each VNet to restrict inbound and outbound traffic. Create necessary rules for allowing inbound and outbound traffic as per the security requirements (e.g. allowing traffic on TCP 3389 for remote access to the VMs).
-![772fa0b5-5319-437c-a0d5-8a4c01d7665c](https://github.com/user-attachments/assets/02f546a6-641c-4d56-b567-abbcf1c1b566
+![772fa0b5-5319-437c-a0d5-8a4c01d7665c](https://github.com/user-attachments/assets/6ed14b6d-dbaa-41b0-a3b4-df6bbc0c53e2)
 
 Test and Verify your connection
 Verify connectivity to each of the VMs by using the ping tool, once connectivity is established head over to establish peering.
